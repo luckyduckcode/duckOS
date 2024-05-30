@@ -12,6 +12,8 @@ computer or even better a custom os and desktop environment that utilizes the in
 my philosophy is kinda more, lets just hangout and build coolstuff.
 and less we need to make the infrastructure for FAANG.
 
+if there are features that you would like to add and you are down to be friends with me, we can work on that feature.
+
 duckOS is an operating system, that is for the anbernic RG351p and will be supported on more devices as we go along. duckOS is an operating system, that is for the anbernic RG351p.
 it utilizes and references:
 
