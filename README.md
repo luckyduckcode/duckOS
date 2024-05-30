@@ -19,3 +19,5 @@ it utilizes and references:
 
 
 https://buildroot.org/
+
+discord: https://discord.gg/XEPbzwt5sp
