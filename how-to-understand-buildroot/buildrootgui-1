@@ -1,0 +1,116 @@
+navigating buidroot config menu gui!
+
+buildroot 2024.02.2 configuration
+
+
+
+*first page menu options*
+
+-target options
+-toolchain
+-build options
+-system configuration
+-kernal
+-target packages
+-filesystem images
+-bootloaders
+-host utilities
+-legacy config options 
+
+
+
+
+what are the target options?
+
+~/target options/target Architechture
+
+****************************************
+ARC (little endian)
+ARC (big endian)
+ARM (little endian)
+ARM (big endian)
+AArch64 (little endian)
+AArch64 (big endian)
+i386
+m68k
+Microblaze AXI (little endian)
+microblaze non-AXI(big endian)
+MIPS (big endian)
+MIPS (little endian)
+MIPS64 (big endian)
+MIPS64 (little endian)
+Nilos II
+OpenRISC
+PowerPC
+PowerPC64 (big endian)
+RISCV
+s390x
+s390x
+SuperH
+SPARC
+SPARC64
+x86_64
+xtensa
+
+Here's the endianness for the listed CPU architectures:
+
+* **Little Endian:**
+    * ARC (little endian)
+    * ARM (little endian)
+    * AArch64 (little endian)
+    * i386 (x86)
+    * Microblaze AXI (little endian)
+    * MIPS (little endian)
+    * MIPS64 (little endian)
+    * OpenRISC
+    * RISCV
+    * xtensa
+* **Big Endian:**
+    * ARC (big endian)
+    * ARM (big endian)
+    * AArch64 (big endian)
+    * m68k
+    * microblaze non-AXI(big endian)
+    * MIPS (big endian)
+    * MIPS64 (big endian)
+    * Nilos II
+    * PowerPC
+    * PowerPC64 (big endian)
+    * s390x
+    * SuperH
+    * SPARC
+    * SPARC64
+
+**Endianness** refers to the order that bytes are stored in a computer's memory.  
+
+* **Little-endian:
+** In little-endian systems, the least significant byte (LSB) of a multi-byte value comes first in memory (at the lower memory address). 
+
+* **Big-endian:
+** In big-endian systems, the most significant byte (MSB) comes first.
+
+For most of the architectures listed here, there's a single endianness that the architecture uses. However, a few architectures, like ARC, ARM, and MIPS, can be either big or little endian depending on the specific model or configuration. 
+
+******************************************************
+
+what best describes rk3326 architecture?
+
+**************************************************************
+
+
+
+The RK3326 architecture can be best described as:
+
+* **ARM-based:** It utilizes the ARM Cortex-A35 cores, a common CPU core design from ARM.
+* **Quad-core:** It has four processing cores. 
+* **Little-endian:** It follows the little-endian byte order for storing data in memory.
+* **High-performance for embedded systems:** While not the most powerful overall, it's designed for efficiency and performance within embedded devices.
+
+Here's a breakdown of the key points:
+
+* **ARM-based:** The RK3326 is built on ARM architecture, a widely used design for processors in various devices, from smartphones to tablets and embedded systems.
+* **Quad-core:** Having four cores allows the RK3326 to handle multiple tasks simultaneously, improving performance.
+* **Little-endian:** This refers to the way data is stored in memory. In little-endian, the least significant byte comes first.
+* **High-performance for embedded systems:** The RK3326 is optimized for embedded devices like single-board computers or retro handheld consoles. It offers good processing power while maintaining efficiency.
+
+********************************************************************
