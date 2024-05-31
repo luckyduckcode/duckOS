@@ -1,0 +1,81 @@
+toolchain type (buildroot toolchain)
+
+clibrary
+kernal
+ Enable compatibility shims to run on older kernels   
+  Install glibc utilities                                                              │ │  
+  │ │                       *** Binutils Options ***      
+  Binutils Version (binutils 2.40)  --->                                               │ │  
+  │ │                   [*] gprofng support 
+  gprofng support                                                                      │ │  
+  │ │                   ()  Additional binutils options                                                          │ │  
+  │ │                       *** GCC Options ***                                                                  │ │  
+  │ │                       GCC compiler Version (gcc 12.x)  --->                                                │ │  
+  │ │                   ()  Additional gcc options                                                               │ │  
+  │ │                   [*] Enable C++ support
+  Enable Fortran support                                                               │ │  
+  │ │                   [*] Enable compiler OpenMP support                                                       │ │  
+  │ │                   [*] Enable graphite support                                                              │ │  
+  │ │                       *** Host GDB Options ***                                                             │ │  
+  │ │                   [*] Build cross gdb for the host                                                         │ │  
+  │ │                   [*]   TUI support                                                                        │ │  
+  │ │                   [*]   Python support                                                                     │ │  
+  │ │                   [ ]   Simulator support                                                                  │ │  
+  │ │                         GDB debugger Version (gdb 13.x)  --->                                              │ │  
+*** Toolchain Generic Options ***                                                    │ │  
+  │ │                   [ ] Copy gconv libraries                                                                 │ │  
+  │ │                   (                          C library (glibc)  --->                                       │ │  
+  │ │                   ()  Target Optimizations                                                                 │ │  
+  │ │                   ()  Target linker options                                                                │ │  
+  │ │                       *** Bare metal toolchain ***                                                         │ │  
+  │ │                   [*] Build a bare metal toolchain  
+  
+  
+  
+  
+  ## Buildroot Toolchain Breakdown
+
+The information you provided shows the configuration options for a toolchain built using Buildroot. Here's a breakdown of the key sections:
+
+**C library (glibc):**
+
+* This indicates the chosen C library for the toolchain. In this case, it's `glibc` (GNU C Library), the standard C library for Linux systems.
+
+**Kernel:**
+
+* This section might be for compatibility with older kernels on the target system. Options include:
+    * **Enable compatibility shims:** This allows applications built with the toolchain to run on older kernels, even if they have newer library features.
+
+**Binutils Options:**
+
+* This configures the `binutils` package, which provides essential tools like assemblers and linkers.
+    * **gprofng support:** Enables profiling tools for analyzing program performance.
+
+**GCC Options:**
+
+* This configures the GNU Compiler Collection (GCC) used in the toolchain.
+    * **GCC compiler Version (gcc 12.x):** Shows the chosen GCC version.
+    * **Enable C++ support:** Allows compiling C++ code with the toolchain.
+    * **Enable Fortran support:** Enables compiling Fortran code.
+    * **Enable compiler OpenMP support:** Enables code parallelization using OpenMP.
+    * **Enable graphite support:** Enables runtime code instrumentation for performance analysis.
+
+**Host GDB Options:**
+
+* This configures the GNU Debugger (GDB) for debugging applications built with the toolchain.
+    * **Build cross gdb for the host:** Creates a GDB version that can debug programs for the target architecture.
+    * **TUI support:** Enables the text-based user interface for GDB.
+    * **Python support:** Enables using Python scripts with GDB.
+
+**Toolchain Generic Options:**
+
+* These are general settings for the toolchain.
+    * **Copy gconv libraries:** Option to copy libraries for character conversion.
+    * **Target Optimizations:** Option to specify optimizations for the target architecture.
+    * **Target linker options:** Option to specify linker flags for the target platform.
+
+**Bare metal toolchain:**
+
+* This option is for building a toolchain for bare-metal systems (without an operating system). It's currently enabled in this configuration.
+
+I hope this explanation clarifies the different sections and their functionalities within the Buildroot toolchain configuration.
