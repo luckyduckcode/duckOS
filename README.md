@@ -18,6 +18,8 @@ duckOS is an operating system, that is for the anbernic RG351p and will be suppo
 it utilizes and references:
 
 copyright 2024
+
+
 https://buildroot.org/
 
 discord: https://discord.gg/XEPbzwt5sp
